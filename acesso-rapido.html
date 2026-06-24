@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acesso Rápido — ChatAtender</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #0f172a;
+    color: #e2e8f0;
+    min-height: 100vh;
+    padding: 16px;
+  }
+
+  h1 {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #64748b;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #1e293b;
+  }
+
+  .section {
+    margin-bottom: 16px;
+  }
+
+  .section-title {
+    font-size: 0.65rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #475569;
+    margin-bottom: 6px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  a.link-btn {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 9px 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #e2e8f0;
+    background: #1e293b;
+    border: 1px solid #334155;
+    font-size: 0.8rem;
+    font-weight: 500;
+    transition: all 0.15s;
+    cursor: pointer;
+  }
+
+  a.link-btn:hover {
+    background: #334155;
+    border-color: #475569;
+    transform: translateX(2px);
+  }
+
+  .icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    flex-shrink: 0;
+  }
+
+  .badge {
+    margin-left: auto;
+    font-size: 0.6rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  .badge-green  { background: #14532d; color: #4ade80; }
+  .badge-blue   { background: #1e3a5f; color: #60a5fa; }
+  .badge-purple { background: #2e1065; color: #a78bfa; }
+  .badge-amber  { background: #451a03; color: #fbbf24; }
+
+  /* Icon backgrounds */
+  .bg-telegram  { background: #0088CC22; }
+  .bg-instagram { background: #E1306C22; }
+  .bg-facebook  { background: #1877F222; }
+  .bg-agente    { background: #F59E0B22; }
+  .bg-causidico { background: #7C3AED22; }
+  .bg-webhook   { background: #0f766e22; }
+  .bg-crm       { background: #7C3AED22; }
+  .bg-vercel    { background: #ffffff11; }
+
+  footer {
+    margin-top: 16px;
+    padding-top: 10px;
+    border-top: 1px solid #1e293b;
+    text-align: center;
+    font-size: 0.65rem;
+    color: #334155;
+  }
+</style>
+</head>
+<body>
+
+<h1>⚡ Atendimento / Acesso Rápido</h1>
+
+<div class="section">
+  <div class="section-title">Redes Sociais</div>
+  <div class="links">
+
+    <a class="link-btn" href="https://t.me/" target="_blank">
+      <span class="icon bg-telegram">✈️</span>
+      Telegram.org
+      <span class="badge badge-blue">Social</span>
+    </a>
+
+    <a class="link-btn" href="https://www.instagram.com/" target="_blank">
+      <span class="icon bg-instagram">📸</span>
+      Instagram.com
+      <span class="badge badge-blue">Social</span>
+    </a>
+
+    <a class="link-btn" href="https://www.facebook.com/" target="_blank">
+      <span class="icon bg-facebook">👤</span>
+      Facebook.com
+      <span class="badge badge-blue">Social</span>
+    </a>
+
+  </div>
+</div>
+
+<div class="section">
+  <div class="section-title">Sistemas ChatAtender</div>
+  <div class="links">
+
+    <a class="link-btn" href="https://agente.chatatender.ia.br" target="_blank">
+      <span class="icon bg-agente">🤖</span>
+      Agente ChatAtender
+      <span class="badge badge-amber">IA</span>
+    </a>
+
+    <a class="link-btn" href="https://causidico.chatatender.ia.br" target="_blank">
+      <span class="icon bg-causidico">⚖️</span>
+      Causídico Defesa IA
+      <span class="badge badge-purple">IA</span>
+    </a>
+
+    <a class="link-btn" href="https://webhook.chatatender.ia.br/login" target="_blank">
+      <span class="icon bg-webhook">⚡</span>
+      n8n Automações
+      <span class="badge badge-green">Auto</span>
+    </a>
+
+    <a class="link-btn" href="https://crm.chatatender.ia.br" target="_blank">
+      <span class="icon bg-crm">📋</span>
+      Krayin CRM
+      <span class="badge badge-purple">CRM</span>
+    </a>
+
+    <a class="link-btn" href="https://chatatender.vercel.app" target="_blank">
+      <span class="icon bg-vercel">🌐</span>
+      Central de Ajuda
+      <span class="badge badge-blue">Docs</span>
+    </a>
+
+  </div>
+</div>
+
+<footer>ChatAtender © 2026 — Medeiros Assessor</footer>
+
+</body>
+</html>

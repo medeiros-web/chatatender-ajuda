@@ -1,5 +1,12 @@
 {
   "version": 2,
-  "builds": [{ "src": "index.html", "use": "@vercel/static" }],
-  "routes": [{ "src": "/(.*)", "dest": "/index.html" }]
+  "builds": [
+    {"src": "index.html", "use": "@vercel/static"},
+    {"src": "acesso-rapido.html", "use": "@vercel/static"}
+  ],
+  "routes": [
+    {"src": "/acesso-rapido", "dest": "/acesso-rapido.html"},
+    {"src": "/acesso-rapido.html", "dest": "/acesso-rapido.html"},
+    {"src": "/(.*)", "dest": "/index.html"}
+  ]
 }
